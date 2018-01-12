@@ -55,7 +55,6 @@ public class NetworkManager {
     public void createRequest(int currentPage, final Callback<WLabsResponse> callback) {
         String params = "/" + currentPage + "/" + PAGE_SIZE;
         String finalURL = BuildConfig.URL_WLABS + BuildConfig.WLABS_API_KEY + params;
-        System.out.println("Manish ->  " + finalURL);
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, finalURL, null,
                 new Response.Listener<JSONObject>() {
                     @Override
