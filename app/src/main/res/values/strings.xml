@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">W Labs</string>
+    <string name="action_settings">Settings</string>
+
+    //generic strings
+    <string name="generic_error_title">Error!</string>
+    <string name="generic_error_message">Something went wrong on our end. We\'re working on it</string>
+    <string name="no_network_error">Cannot connect to the internet. Please check your connection.</string>
+    <string name="server_error">Server Error. Please try after sometime.</string>
+    <string name="timeout_error">Connection timeout. Please check your connection or try after sometime.</string>
+    <string name="no_rating">Not rated yet</string>
+    <string name="ratings">Rating:</string>
+    <string name="description_title">Product Description:</string>
+    <string name="title_activity_product_detail">Product Detail</string>
+    <string name="status_in_stock">In Stock</string>
+    <string name="status_out_of_stock">Out Of Stock</string>
+</resources>
