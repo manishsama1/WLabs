@@ -92,7 +92,8 @@ public class ProductAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         } else {
             Glide.with(context)
                     .load(product.getProductImageURL())
-                    .placeholder(R.mipmap.ic_launcher)//placeholder image while the actual image is getting downloaded
+                    .placeholder(R.mipmap.loading_icon)//placeholder image while the actual image is getting downloaded
+                    .error(R.mipmap.ic_no_preview)
                     .diskCacheStrategy(DiskCacheStrategy.RESULT)//cache image
                     .override(160, 160)//override the image size
                     .into(viewHolder.thumbnailView);

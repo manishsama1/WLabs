@@ -67,8 +67,9 @@ public class ProductDetailActivity extends AppCompatActivity {
         } else {
             Glide.with(this)
                     .load(productImageURL)//image download url
-                    .placeholder(R.mipmap.ic_launcher)//placeholder image
+                    .placeholder(R.mipmap.loading_icon)//placeholder image
                     .diskCacheStrategy(DiskCacheStrategy.SOURCE)//image caching
+                    .error(R.mipmap.ic_no_preview)//error case
                     .into(thumbnailView);
         }
     }
